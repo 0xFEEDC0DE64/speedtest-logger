@@ -1,0 +1,10 @@
+[Unit]
+Description=Test the internet connection speed
+
+[Timer]
+OnCalendar=*:0/15
+Persistent=true
+Unit=speedtest.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Test the internet connection speed
+
+[Service]
+Type=oneshot
+ExecStart=/home/feedc0de/speedlog.sh
+WorkingDirectory=/home/feedc0de
+User=feedc0de
+
+[Install]
+WantedBy=speedtest.timer
